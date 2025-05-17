@@ -1,0 +1,356 @@
+:root {
+    --padding-top-bottom: 28px;
+    --padding-right-left: 80px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Patrick Hand';
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-top-bottom) var(--padding-right-left);
+    position: sticky;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #ff70ae;
+    background: radial-gradient(circle, 
+    rgba(255, 112, 174, 1) 0%, 
+    rgba(148, 187, 233, 1) 100%);
+}
+header img {
+    width: 50px;
+}
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+header nav li {
+    display: block;
+}
+header nav a {
+    font-weight: bold;
+    Color: white;
+    font-size: 1.2em;
+    padding: 10px 20px; 
+    transition-duration: 500ms;
+}
+header nav a:hover {
+    color: #EB0066;
+    background: white;
+    border-radius: 15px;
+    outline: solid;
+}
+section {
+    padding: var(--padding-top-bottom) var(--padding-right-left);
+  }
+.hero {
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    flex: 2;
+}
+.hero-img {
+    flex: 1;
+    padding: 45px 40px;
+} 
+section img {
+    border-radius: 20px;
+    width: 100%;
+}
+.hero-text p {
+    font-size: 1.5em;
+    padding: 20px 50px;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15px;;
+}
+.hero-text a {
+    font-size: 1.5em;
+    color: #EB0066;
+    padding: 15px 40px; 
+    font-weight: bold;
+}
+.hero-text a:hover {
+    background: #EB0066; 
+    border: solid;
+    border-color: black;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 15px;
+} 
+.news {
+    border:4px solid #EB0066;
+}
+.news h1 {
+    font-size: 5em;
+    text-align: center;
+    color:#EB0066;
+}
+.news1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid white;
+    background: #857979;
+    background: radial-gradient(circle, rgba(133, 121, 121, 1) 0%, rgba(134, 252, 231, 1) 0%, rgba(255, 125, 216, 1) 100%);
+} 
+.news1-text {
+    flex: 2;
+} 
+.news1-text h1 {
+    font-size: 2em;
+}
+.news1-text p { 
+    font-size: 1.4em;
+    text-align: justify;
+}
+.news1-img {
+    flex: 1;
+}
+.news2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid white;
+    background: #857979;
+    background: radial-gradient(circle, rgba(133, 121, 121, 1) 0%, rgba(134, 252, 231, 1) 0%, rgba(255, 125, 216, 1) 100%);
+}
+.news2-text { 
+    flex: 2;
+} 
+.news2-text h1{
+    font-size: 2em;
+}
+.news2-text p{ 
+    font-size: 1.4em;
+    text-align: justify;
+}
+.news2-img { 
+    flex: 1;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-top-bottom) var(--padding-right-left);
+    background: radial-gradient(circle, 
+    rgba(255, 112, 174, 1) 0%, 
+    rgba(148, 187, 233, 1) 100%); 
+} 
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+.footer-right i {
+    font-size: 1.5em;
+    color: black;
+}
+.footer-left i {
+    color: #EB0066
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu a {
+    font-weight: bold;
+    Color: #EB0066;
+    font-size: 1.2em;
+    padding: 10px 20px;  
+} 
+.menu a:hover {
+    color: white;
+    background: #94BBE9;
+    border: 1px solid pink;
+    border-radius: 15px;
+} 
+#history {
+    display: flex;
+    align-items: center;
+    background: #FA8CBA;
+} 
+.history-text {
+    flex: 2;
+}
+.history-img {
+    flex: 1;
+}
+.history-text h2 {
+    font-size: 2em;
+}
+.history-text p {
+    padding: 25px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+#fashion {
+    display: flex;
+    align-items: center;
+    background: #94BBE9;
+    gap: 20px;
+} 
+.fashion-text {
+    flex: 2;
+} 
+.fashion-img {
+    flex: 1;
+}
+.fashion-text h2 {
+    font-size: 2em;
+}
+.fashion-text p {
+    padding: 25px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+#cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3, .card4 {
+    width: 20%;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: scale(1.04);
+}
+
+#cards img {
+    border-bottom: 2px solid #ff69b4;
+}
+
+#cards h2 {
+    color: white;
+    font-size: 1.4em;
+    background: #94BBE9;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#cards p {
+    padding: 15px;
+    font-size: 0.95em;
+} 
+
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #B8D8FC;
+} 
+.title {
+    border: 2px solid #EB0066;}
+.title h1 {
+    color: #eb0066;
+    font-size: 4em;
+}
+.pictures img {
+    width: 20%;
+    transition: transform 0.3s ease;
+    padding: 20px 25px;
+} 
+.pictures img:hover {
+    transform: scale(1.1);
+} 
+.quotes {
+  padding: 60px 80px;
+  background: linear-gradient(to bottom, #ffe1ec, #ffffff);
+  text-align: center;
+}
+
+.quotes h2 {
+  font-size: 3em;
+  color: #eb0066;
+  margin-bottom: 40px;
+}
+.quote-box {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #444;
+  background: #ffffff;
+  border-left: 10px solid #ff69b4;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.contact-img {
+    width: 45%; 
+    text-align: right;
+}
+.contact-form h1 {
+    font-size: 3em;
+} 
+.contact-form label {
+    font-size: 1.2em;
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ff69b4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #eb0066;
+}
+.submit {
+    display: flex;
+    align-items: center;
+    padding: 50px 45px;
+}  
+.submit-text h1 {
+    font-size:3em;
+} 
+.submit-text p {
+    padding: 25px 25px;
+    font-size: 2em;
+}
+.submit-text {
+    flex: 2;
+    padding-left: 50px;
+} 
+.submit-img {
+    flex: 1;
+}
+
+
